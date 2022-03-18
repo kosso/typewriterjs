@@ -4,7 +4,6 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 const config = {
   entry: {
     core: resolve('src', 'core', 'index.js'),
-    react: resolve('src', 'react'),
   },
 
   output: {
@@ -15,11 +14,6 @@ const config = {
     libraryExport: 'default',
     globalObject: 'typeof self !== \'undefined\' ? self : this',
     umdNamedDefine: true,
-  },
-
-  externals: {
-    react: 'react',
-    'react-dom': 'react-dom',
   },
 
   module: {
@@ -43,12 +37,10 @@ const config = {
                     ],
                   },
                 },
-            ],
-              '@babel/preset-react',
+              ],
             ],
             plugins: [
               '@babel/plugin-proposal-class-properties',
-              'babel-plugin-transform-react-remove-prop-types',
             ]
           }
         }

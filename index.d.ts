@@ -179,10 +179,4 @@ declare module "typewriter-effect" {
     changeDelay(delay?: Speed): TypewriterClass
   }
 
-  const TypewriterComponent: React.FunctionComponent<{
-    onInit?: (typewriter: TypewriterClass) => void
-    options?: Partial<Options>
-  }>
-
-  export default TypewriterComponent
 }

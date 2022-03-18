@@ -1,4 +1,6 @@
-# TypewriterJS v2
+# TypewriterJS v2.angular
+
+(Branch `angular` : Removed React component to fix Angular builds. Not everyone uses React y'know. ;) )
 
 [![CircleCI](https://circleci.com/gh/tameemsafi/typewriterjs.svg?style=svg)](https://circleci.com/gh/tameemsafi/typewriterjs)
 
@@ -154,41 +156,4 @@ typewriter
   .typeString('A simple yet powerful native javascript')
   .pauseFor(300)
   .start();
-```
-
-## React
-
-This includes a React component which can be used within your project. You can pass in a onInit function which will be called with the instance of the typewriter so you can use the typewriter core API.
-
-```jsx
-import Typewriter from 'typewriter-effect';
-
-<Typewriter
-  onInit={(typewriter) => {
-    typewriter.typeString('Hello World!')
-      .callFunction(() => {
-        console.log('String typed out!');
-      })
-      .pauseFor(2500)
-      .deleteAll()
-      .callFunction(() => {
-        console.log('All strings were deleted');
-      })
-      .start();
-  }}
-/>
-```
-
-Alternatively you can also pass in options to use auto play and looping for example:
-
-```jsx
-import Typewriter from 'typewriter-effect';
-
-<Typewriter
-  options={{
-    strings: ['Hello', 'World'],
-    autoStart: true,
-    loop: true,
-  }}
-/>
 ```

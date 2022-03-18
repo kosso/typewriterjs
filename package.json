@@ -1,15 +1,13 @@
 {
   "name": "typewriter-effect",
   "version": "2.18.2",
-  "main": "dist/react.js",
+  "main": "dist/core.js",
   "types": "index.d.ts",
   "keywords": [
     "typewriter",
     "typewriter effect",
-    "es6",
-    "react",
-    "react typewriter",
-    "react typewriter effect"
+    "typewriter effect angular",
+    "es6"
   ],
   "files": [
     "dist",
@@ -17,7 +15,7 @@
     "LICENSE",
     "readme.md"
   ],
-  "repository": "git@github.com:tameemsafi/typewriterjs.git",
+  "repository": "git@github.com:kosso/typewriterjs.git#angular",
   "author": "Tameem Safi <tameem@safi.me.uk>",
   "license": "MIT",
   "scripts": {
@@ -25,26 +23,17 @@
     "build:dev": "webpack --config ./webpack/development.config.babel.js",
     "test": "jest --env=jsdom"
   },
-  "peerDependencies": {
-    "react": "17.x",
-    "react-dom": "17.x"
-  },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/preset-env": "^7.15.6",
-    "@babel/preset-react": "^7.14.5",
     "@babel/register": "^7.15.3",
     "@babel/runtime": "^7.15.4",
-    "@testing-library/react": "^11.2.7",
     "babel-loader": "^8.2.2",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "core-js": "^3.14.0",
     "jest": "^27.0.4",
     "lolex": "^6.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "regenerator-runtime": "^0.13.3",
     "webpack": "^5.38.1",
     "webpack-bundle-analyzer": "^4.4.2",
