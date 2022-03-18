@@ -79,7 +79,7 @@ All methods can be chained together.
 | deleteChars | ``amount`` Number of characters | Delete and amount of characters, starting at the end of the visible string. |
 | callFunction | ``cb`` Callback, ``thisArg`` this Object to bind to the callback function | Call a callback function. The first parameter to the callback ``elements`` which contains all DOM nodes used in the typewriter effect. |
 | changeDeleteSpeed | ``speed`` Number or 'natural' | The speed at which to delete the characters, lower number is faster. |
-| changeDelay | ``delay`` Number or 'natural' | Change the delay when typing out each character |
+| changeDelay | ``delay`` Number or 'natural' | Change the delay when typing out each character | changeCursor | ``cursor`` String. Defaults to Pipe | Change the cursor character |
 
 ## Examples
 

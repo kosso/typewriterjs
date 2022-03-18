@@ -177,6 +177,14 @@ declare module "typewriter-effect" {
      * @param delay delay Number or 'natural'
      */
     changeDelay(delay?: Speed): Typewriter
+
+    /**
+     * Kosso: Change the cursor.
+     *
+     * @param cursor cursor character. Defaults to Pipe.
+     */
+     changeCursor(cursor?: string): Typewriter
+
   }
 
   /**
