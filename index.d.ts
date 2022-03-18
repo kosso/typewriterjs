@@ -96,44 +96,44 @@ declare module "typewriter-effect" {
   }
 
 
-  export class TypewriterClass {
+  export class Typewriter {
     constructor(container: string | HTMLElement, options: Options)
 
     /**
      * Start the typewriter effect.
      */
-    start(): TypewriterClass
+    start(): Typewriter
 
     /**
      * Stop the typewriter effect.
      */
-    stop(): TypewriterClass
+    stop(): Typewriter
 
     /**
      * Pause the typewriter effect.
      */
-    pause(): TypewriterClass
+    pause(): Typewriter
 
     /**
      * Pause for milliseconds
      * 
      * @param ms Time to pause for in milliseconds
      */
-    pauseFor(ms: number): TypewriterClass
+    pauseFor(ms: number): Typewriter
 
     /**
      * Type out a string using the typewriter effect.
      * 
      * @param string String to type out, it can contain HTML tags
      */
-    typeString(string: string): TypewriterClass
+    typeString(string: string): Typewriter
 
     /**
      * Paste out a string.
      *
      * @param string  String to paste out, it can contain HTML tags
      */
-    pasteString(string: string, node: HTMLElement | null): TypewriterClass
+    pasteString(string: string, node: HTMLElement | null): Typewriter
 
     /**
      * Delete everything that is visible inside of the typewriter wrapper
@@ -142,7 +142,7 @@ declare module "typewriter-effect" {
      * @param speed  Speed to delete all visibles nodes, can be number or
      * 'natural'
      */
-    deleteAll(speed?: Speed): TypewriterClass
+    deleteAll(speed?: Speed): Typewriter
 
     /**
      * Delete and amount of characters, starting at the end of the visible
@@ -150,7 +150,7 @@ declare module "typewriter-effect" {
      *
      * @param amount Number of characters
      */
-    deleteChars(amount: number): TypewriterClass
+    deleteChars(amount: number): Typewriter
 
     /**
      * Call a callback function. The first parameter to the callback elements
@@ -162,21 +162,27 @@ declare module "typewriter-effect" {
     callFunction(
       callback: (state: TypewriterState) => void,
       thisArg?: Record<string, any>,
-    ): TypewriterClass
+    ): Typewriter
 
     /**
      * The speed at which to delete the characters, lower number is faster.
      *
      * @param speed Number or 'natural'
      */
-    changeDeleteSpeed(speed?: Speed): TypewriterClass
+    changeDeleteSpeed(speed?: Speed): Typewriter
 
     /**
      * Change the delay when typing out each character
      *
      * @param delay delay Number or 'natural'
      */
-    changeDelay(delay?: Speed): TypewriterClass
+    changeDelay(delay?: Speed): Typewriter
   }
+
+  /**
+   * Kosso: Removed React component to fix Angualr builds.
+   */
+
+  export default Typewriter;
 
 }
