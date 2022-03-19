@@ -114,7 +114,7 @@ class Typewriter {
   /**
    * Kosso: Get state
    */
-   state = () => {
+  getstate = () => {
     return this.state;
   }
 

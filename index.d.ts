@@ -102,7 +102,7 @@ declare module "typewriter-effect" {
     /**
      * Kosso: Get typewriter state 
      */
-    state(): Typewriter
+    getstate(): Typewriter
 
     /**
      * Start the typewriter effect.
