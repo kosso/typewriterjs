@@ -1,4 +1,5 @@
 type Speed = "natural" | number
+type State = Object
 
 declare module "typewriter-effect" {
   export interface Options {
@@ -98,6 +99,10 @@ declare module "typewriter-effect" {
 
   export class Typewriter {
     constructor(container: string | HTMLElement, options: Options)
+    /**
+     * Kosso: Get typewriter state 
+     */
+    state(): Typewriter
 
     /**
      * Start the typewriter effect.

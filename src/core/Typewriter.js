@@ -112,6 +112,13 @@ class Typewriter {
   }
 
   /**
+   * Kosso: Get state
+   */
+   state = () => {
+    return this.state;
+  }
+
+  /**
    * Start typewriter effect
    */
   start = () => {
